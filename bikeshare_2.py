@@ -65,7 +65,7 @@ def load_data(city, month, day):
 
 def switch_month_num(param):
     """
-    :param param: name of month or number associated with month
+    :param param - name of month or number associated with month
     :return: name of month or number associated with month, opposite of param
     """
     name = {
@@ -106,7 +106,9 @@ def print_pretty_hour(hour):
 
 
 def time_stats(df):
-    """Displays statistics on the most frequent times of travel."""
+    """
+    Displays statistics on the most frequent times of travel. By month, day of week, and hour
+    """
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
@@ -157,7 +159,7 @@ def trip_duration_stats(df):
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
 
-    # display total travel time
+    # display total travel time combined
     print('Total travel time:')
     tot_travel = float(df['Trip Duration'].sum())
     tot_travel /= 60
