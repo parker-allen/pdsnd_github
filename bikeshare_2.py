@@ -5,7 +5,7 @@ import numpy as np
 def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
 
-    # user input for city
+    # user input for which city they want
     city = input('Which city would you like to analyze? ')
     while city.lower() not in ('chicago', 'new york city', 'washington'):
         city = input('It must be Chicago, New York City, or Washington... ')
